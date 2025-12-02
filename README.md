@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# 🗺️ UOS Living Map (서울시립대 주거 안심 & 공간정보 갱신 플랫폼)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> **2025B 사진측량학 기말 팀 프로젝트** > 수치지도 갱신 및 영상기반 공간정보 구축을 통한 특화된 공간 콘텐츠 제작
 
-## Available Scripts
+![Project Status](https://img.shields.io/badge/Status-Prototype-blue) ![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react) ![KakaoMap](https://img.shields.io/badge/KakaoMap-API-ffcd00)
 
-In the project directory, you can run:
+## 📖 프로젝트 개요
 
-### `npm start`
+**UOS Living Map**은 기존 포털 지도가 제공하지 못하는 **서울시립대 주변의 최신 골목 정보와 주거 안전 데이터**를 학생들이 직접 갱신하고 공유하는 플랫폼입니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+단순한 원룸 매물 검색을 넘어, **직접 촬영한 3D 모델(Luma AI)**과 **안전 시설(CCTV, 가로등)** 정보를 통합하여 **"안심하고 살 수 있는 주거 지도"**를 구축하는 것을 목표로 합니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ 주요 기능
 
-### `npm test`
+### 1. 🛡️ 안심 주거 지도 (Safety Map)
+- **레이어 필터링:** 원룸 매물, 신축 건물, 안심 시설(CCTV/가로등), 안심 귀갓길 등 원하는 정보만 지도 위에 시각화합니다.
+- **안심 귀갓길 안내:** 학교 주변 어두운 골목길 대신, 조명이 밝고 CCTV가 설치된 안전한 경로를 시각적으로 제공합니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. 🏗️ 영상 기반 공간정보 구축 (3D Integration)
+- **3D 모델 뷰어:** Luma AI로 촬영한 건물 및 골목길의 3D 모델을 앱 내에서 바로 확인할 수 있습니다.
+- **상세 정보 카드:** 건물의 외관, 층수, 건축 연도, 안전 시설 유무 등 상세 속성 정보를 제공합니다.
 
-### `npm run build`
+### 3. 🔄 사용자 참여형 지도 갱신 (Map Updating)
+- **지도 정보 신고:** 신축 건물 발견, 도로 파손, 가로등 고장 등 지도와 다른 정보를 사용자가 직접 제보합니다.
+- **데이터 업로드:** 스마트폰으로 촬영한 현장 사진과 3D 모델 URL을 등록하여 지도를 최신 상태로 유지합니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 4. 👤 기여도 기반 마이페이지 (Gamification)
+- **기여 레벨 시스템:** 지도 갱신 활동(신고, 등록)에 따라 경험치를 획득하고 레벨이 상승합니다.
+- **활동 내역 관리:** 내가 제보한 내역의 승인 상태와 기여 현황을 한눈에 볼 수 있습니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ 기술 스택 (Tech Stack)
 
-### `npm run eject`
+- **Frontend:** React.js
+- **Map API:** Kakao Maps SDK
+- **3D Viewer:** Luma AI WebGL Embed
+- **UI Components:** Lucide React (Icons), Inline CSS (Custom Design)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀 실행 방법 (Getting Started)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+이 프로젝트를 로컬 환경에서 실행하려면 다음 단계가 필요합니다.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 1. 저장소 클론 및 패키지 설치
+```bash
+git clone [레포지토리 주소]
+cd [프로젝트 폴더명]
+npm install
